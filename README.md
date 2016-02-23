@@ -59,6 +59,10 @@ In terminal type `cd code-along-ex-1`. Then, bring this folder up in your prefer
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLj148bJp5wiyXRRpL8rM-cLETaClgdBK2" frameborder="0" allowfullscreen></iframe>
 
+### Setup local testing.
+
+To get setup for local tests in Terminal type `gem install 'webrick' && gem install 'rainbow' -v 1.99.2 && gem install 'green_onion' && gem install 'rspec' && gem install 'learn-co'` and press return.
+
 ### Run local tests.
 
 To run local tests type the `learn` command from Terminal. This will take a snapshot of one of your pages and make a comparison with a solution snapshot. If it passes the local build light will trun green for this lesson page back at learn.co in your browser. If it does not pass watch the video again, and check your code.

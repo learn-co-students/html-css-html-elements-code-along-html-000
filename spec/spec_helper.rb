@@ -15,7 +15,8 @@ def create_screenshots
   GreenOnion.skin_visual('http://localhost:8000/index.html')
   GreenOnion.skin_visual('http://localhost:8000/real-estate-listings.html')
   GreenOnion.skin_visual('http://localhost:8000/market-report.html')
-  GreenOnion.skin_visual('http://localhost:8000/new-properties.html.html')
+  GreenOnion.skin_visual('http://localhost:8000/new-properties.html')
+  GreenOnion.skin_visual('http://localhost:8000/contact.html')
 end
 
 def start_server_thread

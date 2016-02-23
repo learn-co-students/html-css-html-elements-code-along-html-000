@@ -99,4 +99,4 @@ C. Then click Create pull request button again.
 
 ## Resources
 
-- [#](#)
+- [HTML Encoding (Character Sets)](http://www.w3schools.com/html/html_charset.asp)

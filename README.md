@@ -81,7 +81,7 @@ Follow along with the provided video, coding everything you see there. Feel free
 
 ### Setup local testing.
 
-To get setup for local tests in Terminal type `gem install 'webrick' && gem install 'rainbow' -v 1.99.2 && gem install 'green_onion' && gem install 'rspec' && gem install 'learn-co'` and press return.
+To get setup for local tests in Terminal paste in `brew install imagemagick && brew install selenium-server-standalone && brew install chromedriver && gem install 'webrick' && gem install 'rainbow' -v 1.99.2 && gem install 'green_onion' && gem install 'rspec' && gem install 'learn-co'` and press return.
 
 ### Run local tests.
 

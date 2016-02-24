@@ -2,14 +2,15 @@
 
 ## Objectives
 
-1. Document structure
-2. Text formatting
-3. Lists
-4. Tables
-5. Images
-6. Links
-7. Backing Up with Git
-8. Making a pull request
+1. Practice implementing document structure.
+2. Text formatting within a web page.
+3. Building lists within a web page.
+4. Building Tables within a web page.
+5. Building Images within a web page.
+6. Adding Links between pages.
+7. Staging and commiting with Git.
+8. Pushing your code with Git.
+8. Making a pull request on Github.
 
 ## Introduction
 
@@ -55,7 +56,26 @@ Type your clone command in your terminal and hit enter and you should see git do
 
 In terminal type `cd code-along-ex-1`. Then, bring this folder up in your preferred code editor. For example to use Sublime Text on Mac type `subl .`
 
-### Code along with the provided video below,
+### Starting a New Site Project
+
+At this point in Terminal you would create any sub folders and files using the `mkdir` command and `touch` commands. We have already done this for you so you can get coding right away. In Sublime you will see we have already created the files and folders,
+
+```shell
+├── README.md
+├── contact.html
+├── images
+│   └── intro-pic.jpg
+├── index.html
+├── market-report.html
+├── new-properties.html
+├── real-estate-listings.html
+└── spec
+    └── ...
+```
+
+### Code Along Video
+
+Follow along with the provided video, coding everything you see there. Feel free to stop, pause, rewind or fast forward through the content to keep pace. After the video, continue on to the text instructions that follow below.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLj148bJp5wiyXRRpL8rM-cLETaClgdBK2" frameborder="0" allowfullscreen></iframe>
 

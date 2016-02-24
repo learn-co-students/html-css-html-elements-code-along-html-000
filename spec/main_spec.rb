@@ -1,5 +1,6 @@
 require 'webrick'
 require 'green_onion'
+require 'capybara/rspec'
 require 'rspec'
 require 'spec_helper'
 

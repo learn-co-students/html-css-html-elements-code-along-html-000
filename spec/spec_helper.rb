@@ -11,6 +11,12 @@ GreenOnion.configure do |c|
   c.driver = :selenium
 end
 
+Capybara.register_driver :chrome do |app|
+  Capybara::Selenium::Driver.new(app, :browser => :chrome)
+end
+
+Capybara.javascript_driver = :chrome
+
 def create_screenshots
   GreenOnion.skin_visual('http://localhost:8000/index.html')
   GreenOnion.skin_visual('http://localhost:8000/real-estate-listings.html')

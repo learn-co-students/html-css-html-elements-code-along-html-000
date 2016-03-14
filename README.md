@@ -2,15 +2,15 @@
 
 ## Objectives
 
-1. Practice implementing document structure.
-2. Text formatting within a web page.
-3. Building lists within a web page.
-4. Building Tables within a web page.
-5. Building Images within a web page.
-6. Adding Links between pages.
-7. Staging and commiting with Git.
-8. Pushing your code with Git.
-8. Making a pull request on Github.
+1. Implement document structure
+2. Format text within a web page
+3. Build lists within a web page
+4. Build tables within a web page
+5. Build images within a web page
+6. Add links between pages
+7. Stage and commit with Git
+8. Push code with Git
+8. Make a pull request on Github
 
 ## Introduction
 
@@ -58,7 +58,7 @@ In terminal type `cd code-along-ex-1`. Then, bring this folder up in your prefer
 
 ### Starting a New Site Project
 
-At this point in Terminal you would create any sub folders and files using the `mkdir` command and `touch` commands. We have already done this for you so you can get coding right away. In Sublime you will see we have already created the files and folders,
+At this point in Terminal you would create any sub folders and files using the `mkdir` command and `touch` commands. We have already done this for you so you can get coding right away. In Sublime you will see we have already created the files and folders.
 
 ```shell
 ├── README.md
@@ -85,7 +85,7 @@ To get setup for local tests in Terminal paste in `brew install imagemagick && b
 
 ### Run local tests.
 
-To run local tests type the `learn` command from Terminal. This will take a snapshot of one of your pages and make a comparison with a solution snapshot. If it passes the local build light will trun green for this lesson page back at learn.co in your browser. If it does not pass watch the video again, and check your code.
+To run local tests type the `learn` command from Terminal. This will take a snapshot of one of your pages and make a comparison with a solution snapshot. If it passes, the local build light will turn green for this lesson page back at learn.co in your browser. If it does not pass watch the video again, and check your code.
 
 ### Stage, commit, and push up your changes.
 

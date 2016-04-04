@@ -93,9 +93,135 @@ Save your page, Command + s on Mac or Ctrl + s on windows. Then open the HTML pa
 
 The page is currently blank because we haven't yet inserted any content into the body yet, but we can see our title at the top of the browser tab.
 
-Next let's type `Hello World` into the body section. Then head back to the browser and press Command + r on Mac, or Ctrl + r on windows to refresh the page.
+### Text Formatting
 
-Now you can see your "Hello World" message in the browser window.
+Next let's type `Hello World` into the body section. 
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - About</title>
+  </head>
+  <body>
+    <!-- The body is the entire viewable area of the web page. For example we can see text, links, images, and media. -->
+    Hello World
+  </body>
+</html>
+```
+
+Save the page, then head back to the browser and press Command + r on Mac, or Ctrl + r on windows to refresh the page. Now you can see your "Hello World" message in the browser window.
+
+Next, let's look at the way white space is interpreted by the browser. Head back to your index page and press return several times after the "Hello World" text and type `Hello Moon`.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - About</title>
+  </head>
+  <body>
+    <!-- The body is the entire viewable area of the web page. For example we can see text, links, images, and media. -->
+    Hello World.
+    
+    Hello Moon.
+  </body>
+</html>
+```
+
+Save the page, then head back to the browser and press Command + r on Mac, or Ctrl + r on windows to refresh the page. You'll notice that the line returns are not being interpreted as white space, instead the text appears on the same line `Hello World. Hello Moon.`.
+
+In order to create paragraphs with space in between we'll need to use th `<p></p>` element like so.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - About</title>
+  </head>
+  <body>
+    <!-- The body is the entire viewable area of the web page. For example we can see text, links, images, and media. -->
+    <p>Hello World.</p>
+    <p>Hello Moon.</p>
+  </body>
+</html>
+```
+
+Save the page, then head back to the browser and press Command + r on Mac, or Ctrl + r on windows to refresh the page. Now we can see that there is a full line return with white space above and below our paragraphs.
+
+Next let's create some headings. Type an `<h1></h1>` and `<h2></h2>` above our paragraphs like so:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - About</title>
+  </head>
+  <body>
+    <!-- The body is the entire viewable area of the web page. For example we can see text, links, images, and media. -->
+    <h1>Exceptional</h1>
+    <h2>Realty Group</h2>
+    <p>Hello World.</p>
+    <p>Hello Moon.</p>
+  </body>
+</html>
+```
+
+Save the page, then head back to the browser and refresh the page. Now we can see our headings. the "h1" is the largest and most important for search engines, and the h2 is slightly smaller and carries slightly less importance for search terms.
+
+Next lets put in some place filler text to replace our previous paragraphs. In your code editor you may have shortcut commands installed. for example in Sublime Text we can type the letter `p` and the hit tab and it will autocomplete for us the `<p></p>` element and to fill it with placefiller text we can type `lorem` and hit the tab key which will produce the following:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - About</title>
+  </head>
+  <body>
+    <!-- The body is the entire viewable area of the web page. For example we can see text, links, images, and media. -->
+    <h1>Exceptional</h1>
+    <h2>Realty Group</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas, dolore facere quis laboriosam soluta repellendus eius reiciendis nobis consequatur iusto ea aliquid! Porro, cupiditate excepturi facere ipsum? Similique, aliquam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas, dolore facere quis laboriosam soluta repellendus eius reiciendis nobis consequatur iusto ea aliquid! Porro, cupiditate excepturi facere ipsum? Similique, aliquam!</p>
+  </body>
+</html>
+```
+
+Save the page, then head back to the browser and refresh the page. Now we can see our place filler paragraph using auto completion. We'll elarn more of these time saving tricks later on.
+
+Next let's create a line-break in our paragraph by inserting the `<br>` element to force a new line like so:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - About</title>
+  </head>
+  <body>
+    <!-- The body is the entire viewable area of the web page. For example we can see text, links, images, and media. -->
+    <h1>Exceptional</h1>
+    <h2>Realty Group</h2>
+    <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Cupiditate quas, dolore facere quis laboriosam soluta repellendus eius reiciendis nobis consequatur iusto ea aliquid! Porro, cupiditate excepturi facere ipsum? Similique, aliquam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas, dolore facere quis laboriosam soluta repellendus eius reiciendis nobis consequatur iusto ea aliquid! Porro, cupiditate excepturi facere ipsum? Similique, aliquam!</p>
+  </body>
+</html>
+```
+
+Save the page, then head back to the browser and refresh. You can see the line now wraps after the "...sit amet", and the "consectetur..." wraps to the next line.
+
+
 
 ## Resources
 

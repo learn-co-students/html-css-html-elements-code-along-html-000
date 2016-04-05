@@ -51,7 +51,7 @@ Inside the HTML element let's devide the document up into our two main parts the
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head></head>
   <body></body>
 </html>
@@ -61,7 +61,7 @@ Let's write a comment in the code that we can read and leave notes about the con
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
   </head>
@@ -77,7 +77,7 @@ Also type a `<title></title>` element into the `<head>` section. Here we can giv
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
     <meta charset="UTF-8">
@@ -99,7 +99,7 @@ Next let's type `Hello World` into the body section.
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
     <meta charset="UTF-8">
@@ -118,7 +118,7 @@ Next, let's look at the way white space is interpreted by the browser. Head back
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
     <meta charset="UTF-8">
@@ -139,7 +139,7 @@ In order to create paragraphs with space in between we'll need to use th `<p></p
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
     <meta charset="UTF-8">
@@ -159,7 +159,7 @@ Next let's create some headings. Type an `<h1></h1>` and `<h2></h2>` above our p
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
     <meta charset="UTF-8">
@@ -181,7 +181,7 @@ Next lets put in some place filler text to replace our previous paragraphs. In y
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
     <meta charset="UTF-8">
@@ -203,7 +203,7 @@ Next let's create a line-break in our paragraph by inserting the `<br>` element 
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- The head section contains info for search engines and the browser and is not seen by site visitors. -->
     <meta charset="UTF-8">
@@ -225,7 +225,7 @@ Next, open the real-estate-listing.html page in your code editor. Write out the 
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Exceptional Realty Group - Luxury Homes - Listings</title>
@@ -245,7 +245,7 @@ Let's create an unorded list with dates for our property archive. Start with a `
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Exceptional Realty Group - Luxury Homes - Listings</title>
@@ -274,9 +274,158 @@ Inside the `<ul>` we create `<li>` elements for each date.
 </ul>
 ```
 
+Next we will create a sub nested list of dates for the month of Oct.
+
+```html
+<!-- unordered list -->
+<ul>
+  <li>Dec</li>
+  <li>Nov</li>
+  <li>Oct
+    <ul>
+      <li>17th</li>
+      <li>18th</li>
+    </ul>
+  </li>
+</ul>
+```
+
+Notice that we opened up the `<li>Oct</li>` and placed an additonal `<ul>` inside of it with its own `<li>`. This creates a sub list inside of our parent list. Go ahead and save this page and refresh in the browser and you will see bullet points for each Month name and open elipsis (bullets) for the days 17th and 18th.
+
+We'll add a new h3 heading under out previous list and then, next let's create an ordered list below it. Ordered lists differ in that they have numbered list items instead of bulleted as they were in the unordered list. We begin by inserting a `<ol></ol>` element with some of its own `<li>` inside of it containing street addresses.
+
+```html
+<!-- ... -->
+
+<h3>Popular Listings</h3>
+<!-- ordered list -->
+<ol>
+  <li>384 Stockton St.</li>
+  <li>3742A Belvevadere Rd.</li>
+  <li>41 Cleaton Ave.</li>
+</ol>
+```
+
+Go ahead and save this page and refresh in the browser and you will see this list has numbers for each list item (1 though 3).
+
+Next, let's open up the market-report.html page in your code editor. Fill in the basic HTML document structure changing the title and using the same headings. Feel free to copy and paste the content and change what is neccessary. We will also add an `<h3>Market Report</h3>`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - Market Report</title>
+  </head>
+  <body>
+    <h1>Exceptional</h1>
+    <h2>Realty Group</h2>
+    <h3>Market Report</h3>
+    
+  </body>
+</html>
+```
+
 ### Tables
 
-...
+Now we would like to insert a table that will hold data about different real estate properties and divide the information up into rows and columns. We'll start by inserting the `<table></table>` element.
+
+```html
+<!-- ... -->
+<h3>Market Report</h3>
+<table>
+
+</table>
+```
+Inside the `<table>` we create rows by inserting the `<tr></tr>` table row element Let's create 4 separate rows.
+
+```html
+<!-- ... -->
+<h3>Market Report</h3>
+<table>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+</table>
+```
+
+To create columns we can futher divide up the rows by inserting either `<th>` table header cell or `<td>` regular table cell. The table headers are meant to label the tops of columns and the normal table cells are for separating data for each column. In the first row lets add table header cells for "Address", "City", "State", "Sales Price".
+
+```html
+<table>
+  <tr>
+    <th>Address</th><th>City</th><th>State</th><th>Sales Price</th>
+  </tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+</table>
+```
+
+Then we will fill in some data for each real estate property within `<td>` elements for the remaining rows. We'll also format our `<th>` and `<td>` vertically so its easier to read in the code, although it will not effect the way it displays in the browser.
+
+```html
+<table>
+  <tr>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Sales Price</th>
+  </tr>
+  <tr>
+    <td>2345 Fairview Ln.</td>
+    <td>Brooklyn</td>
+    <td>NY</td>
+    <td>$1.2 mil</td>
+  </tr>
+  <tr>
+    <td>974 Clapton St.</td>
+    <td>Queens</td>
+    <td>NY</td>
+    <td>$998 k</td>
+  </tr>
+  <tr>
+    <td>14A Belmont Way</td>
+    <td>Bronx</td>
+    <td>NY</td>
+    <td>$874 k</td>
+  </tr>
+</table>
+```
+
+Go ahead and save this page and refresh in the browser and you will see our table appears. The "th" cells have bold text that is centered above each column and the regular cells are normal text weight and left aligned. If you highlight the content of the table you will see the grid that the table is creating to allign our content into rows and columns. Later on in a future lesson we will explore styling the table to adjust its visual appearance.
+
+Next let's jump back over to the index.html page in your code editor.
+
+### Images
+
+To display images in HTML pages we use the `<img>` element. Let's insert one inside our index.html page just below our "h2". Then we will give it the two required attributes `src` and `alt`. 
+
+```html
+<h2>Realty Group</h2>
+<img src="" alt="">
+```
+
+The src (source) attribute points the browser to the location of our image file. Here will give it the relative path from our "index.html" page to our "intro-pic.jpg" file. Our image is inside of the "images" folder so we need to tell the browser to first open the images folder and load the intro-pic.jpg file inside of it such as `images/intro-pic.jpg`. We tell the browser to go into a folder by providing it "foldername/" folder name slash and to leave the current folder and go up to a parent directory we use "../" dot dot slash. In our case since the images folder is inside the same folder as our index page we can just specify `images/intro-pic.jpg`.
+
+```html
+<img src="images/intro-pic.jpg" alt="">
+```
+
+Next let's specify the alt attribute.  the alt attribute stands fro alternative text. It provides a text description for the visiually impaired. In this case if a blind person was visiting this page a screen reader would read to them out loud the content of the page and when it got to our image it would read the alt text. This alt text is also useful for search engines.
+
+```html
+<img src="images/intro-pic.jpg" alt="A beautiful living room.">
+```
+
+We can also optionally add a title attribute that will display a text caption if the user mouses over the image and leaves the mouse there for a perios of time.
+
+```html
+<img src="images/intro-pic.jpg" alt="A beautiful living room." title="Welcome to Exceptional Realty Group">
+```
+
+Let's save our file, and return to the browser and refresh the page you image should appear. When we mouse over the image and leave the mouse there for a seond or two the title text "Welcome to Exceptional Realty Group" will appear. Notice that the alt text is hidden however.
 
 ### Backing Up Changes
 

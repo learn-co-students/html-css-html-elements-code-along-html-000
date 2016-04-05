@@ -221,7 +221,70 @@ Next let's create a line-break in our paragraph by inserting the `<br>` element 
 
 Save the page, then head back to the browser and refresh. You can see the line now wraps after the "...sit amet", and the "consectetur..." wraps to the next line.
 
+Next, open the real-estate-listing.html page in your code editor. Write out the same basic document structure we created in the index page including the same headingsa s before, but this time we will create some new sub headings.
 
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - Listings</title>
+  </head>
+  <body>
+    <h1>Exceptional</h1>
+    <h2>Realty Group</h2>
+    <h3>Property Archive</h3>
+    <h4>2014</h4>
+  </body>
+</html>
+```
+
+### Lists
+
+Let's create an unorded list with dates for our property archive. Start with a `<ul></ul>` element like so:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - Listings</title>
+  </head>
+  <body>
+    <h1>Exceptional</h1>
+    <h2>Realty Group</h2>
+    <h3>Property Archive</h3>
+    <h4>2014</h4>
+    <!-- unordered list -->
+    <ul>
+      
+    </ul>
+  </body>
+</html>
+```
+
+Inside the `<ul>` we create `<li>` elements for each date.
+
+```html
+<!-- unordered list -->
+<ul>
+  <li>Dec</li>
+  <li>Nov</li>
+  <li>Oct</li>
+</ul>
+```
+
+### Tables
+
+...
+
+### Backing Up Changes
+
+...
+
+### Validation
+
+...
 
 ## Resources
 

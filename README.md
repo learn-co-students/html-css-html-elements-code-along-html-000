@@ -450,15 +450,26 @@ Note that on the last link instead of specifiying a relative file path as we did
 <a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
 ```
 
-Let's copy and paste our link code and include it in the same place (just below the "h2" on all our other pages). Then save all the pages and refresh the index page in the browser. Click the links on each page to test that we are properly linking to each page. You'll notice the HUD link is opening a new browser tab.
+Let's copy and paste our link code and include it in the same place (just below the "h2" on all our other pages). For the contact page since its empty you can fill it in with the following code:
 
-### Backing Up Changes
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+     <title>Exceptional Realty Group - Luxury Homes - Contact</title>
+  </head>
+  <body>
+    <h1>Exceptional</h1>
+    <h2>Realty Group</h2>
+    <!-- links -->
+    <a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
+    <h3>Contact</h3>
+  </body>
+</html>
+```
 
-...
-
-### Validation
-
-...
+Then save all the pages and refresh the index page in the browser. Click the links on each page to test that we are properly linking to each page. You'll notice the HUD link is opening a new browser tab.
 
 ## Resources
 

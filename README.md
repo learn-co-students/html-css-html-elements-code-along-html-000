@@ -427,6 +427,31 @@ We can also optionally add a title attribute that will display a text caption if
 
 Let's save our file, and return to the browser and refresh the page you image should appear. When we mouse over the image and leave the mouse there for a seond or two the title text "Welcome to Exceptional Realty Group" will appear. Notice that the alt text is hidden however.
 
+### Links
+
+Next, back in our code editor on the index.html page let's add some links to link allof the pages to each other. Above our image let's create some site navigation made up of `<a></a>` anchor link elements.
+
+```
+<!-- links -->
+<a href="index.html">About</a>
+```
+
+Notice that we surround the content that we would like to act as a link with our starting `<a>` and ending `</a>` tags. The content in between these tags becomes the clickable link. We tell the browser which page to change to when we someone clicks our link by specifiying a relative path in the `href` attribute. So for our first link we wanted to link the text "About" to our "index.html" page. In the code this appears as: `<a href="index.html">About</a>`. Let's create more links one for each of out other site pages and one to link to an external website.
+
+```html
+<!-- links -->
+<a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov">H.U.D.</a>
+```
+
+Note that on the last link instead of specifiying a relative file path as we did in the others that link to local site pages, we instead provided the absolute path using `http://` and the URL of the external website `hud.gov`. All of our links will by default target the current browser window so that when we click a link it will change the current browser window from the previous content to the content of the new page we are linking to. The last link for `hud.gov` we want to open a new browser tab when we click the link, that way the users current tab stays on our site and they are provided a new tab for the `hud.gov` Housing and Urban Development site. We accomplish this by adding the `target` attribute and setting its value to `_blank`. Here is the finished code:
+
+```html
+<!-- links -->
+<a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
+```
+
+Let's copy and paste our link code and include it in the same place (just below the "h2" on all our other pages). Then save all the pages and refresh the index page in the browser. Click the links on each page to test that we are properly linking to each page. You'll notice the HUD link is opening a new browser tab.
+
 ### Backing Up Changes
 
 ...

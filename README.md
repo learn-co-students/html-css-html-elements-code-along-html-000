@@ -18,9 +18,10 @@ In this exercise you will code along with the video to review the HTML fundament
 
 ## Instructions
 
-- Fork this repository.
-- Clone your forked copy.
-- change directory into the repository folder.
+- Fork this repository on Github.
+- Use Terminal to clone your forked copy.
+- Then change directory into the repository folder.
+- create a new branch called "main-pages" using the command `git checkout -b main-pages`
 - Open the files in your code editor (in the video I use Sublime Text).
 - At this point in Terminal you would create any sub folders and files using the `mkdir` command and `touch` commands. We have already done this for you so you can get coding right away. In the code editor you will see we have already created the following files and folders.
 
@@ -36,7 +37,7 @@ In this exercise you will code along with the video to review the HTML fundament
 └── spec
     └── ...
 ```
-    
+
 - Code along with the provided video below and/or its supplementary reading located below the video. Code everything you see there. Feel free to stop, pause, rewind or fast forward through the content to keep pace.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLj148bJp5wiyXRRpL8rM-cLETaClgdBK2" frameborder="0" allowfullscreen></iframe>
@@ -469,7 +470,51 @@ Let's copy and paste our link code and include it in the same place (just below 
 </html>
 ```
 
-Then save all the pages and refresh the index page in the browser. Click the links on each page to test that we are properly linking to each page. You'll notice the HUD link is opening a new browser tab.
+Then save all the pages and refresh the index page in the browser. Click the links on each page to test that we are properly linking to each page. The HUD link should open in a new browser tab.
+
+### Validation
+
+Let's talk about validating your HTML code. You're only human, we all make mistakes in our code from time to time. The most common type of error for a beginner is syntax error. That is when something in your code is not typed properly, is missing characters, or has additional uneccessary characters. To check for this, we can validate our code using the W3C's online HTML Validator.
+
+To demonstrate this, we will purposely create a syntax error in our index page. Open the index.html page in your code editor. Scroll to where we wrote our first `<p>` element (for me this was on line 30 in the lecture video above) and remove the `>` symbol after the `<p`:
+
+```html
+<p lorem ipsum dolor sit amet, ... </p>
+```
+
+Now select all of your code by pressing Command + a on Mac or Ctrl + a on PC (Windows). Then copy the selected code to your clipboard by pressing Command + c on Mac or Ctrl + c on PC (Windows).
+
+Next, open your browser and head to: `https://validator.w3.org/`. Then click the tab that says "Validate by Direct Input".
+
+Click into the textarea feild labeled "Enter the Markup to validate:" and paste your code by pressing Command + v on Mac or Ctrl + v on PC (Windows). Then click the big "Check" button.
+
+A red bar should appear at the top of the page saying "Errors found while checking this document...". Scroll down the page where it says "Validation Output Errors". If all the rest of your code was correct except for the error message we just intentionally inserted, then the first error message will read something like: 
+
+> Line 30, Column 35: < in the attribute name. Probable cause: > missing immediately before.
+
+The first part of the error "Line 30" identifies the line number of the issue. The second piece "Column 35" means 35 characters including spaces from the beginning of the line is where it sees the issue. The third piece "< in the attribute name." states that at that location it sees a `<` less than symbol that is being read as part of an attribute name on the `p` element. Then the fourth part "Probable cause: > missing immediately before" gives us a hint as to why this is broken. THe reason is we have a missing `>` as it suggests.
+
+Let's go back and fix our code adding the `>` symbol back in. 
+
+```html
+<p>lorem ipsum dolor sit amet, ... </p>
+```
+
+Then save the file select all the text again and copy it to the clipboard, and paste it back into the validator and try checking it again a second time now that we corrected the error. This time a green bar appears at the top of the page that states "This document was successfully checked...". This means we have no more syntax errors in our code.
+
+So you see the HTML validator can be helpful if we have typos in our code and they are tough to see on our own. The validator will scan the code and check for us letting us know of any potential issues.
+
+### Backing Up Your Changes
+
+In Terminal, type `git status` and press return to list any changes that have occured on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git checkout -m "ad main pages, text content, image, and links"` and press return. 
+
+To backup our branch on the remote server we can push it up by typing `git push -u origin main-pages` and press return. This will push up this recent commit to your personal Github repository.
+
+`git checkout master`
+
+`git merge main-pages`
+
+`git push origin master`
 
 ## Resources
 

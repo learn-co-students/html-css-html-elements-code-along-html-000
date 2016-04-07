@@ -510,11 +510,15 @@ In Terminal, type `git status` and press return to list any changes that have oc
 
 To backup our branch on the remote server we can push it up by typing `git push -u origin main-pages` and press return. This will push up this recent commit to your personal Github repository.
 
-`git checkout master`
+Next let's go back to our master branch by typing `git checkout master` and press return.
 
-`git merge main-pages`
+Since we like the work we did on our "main-pages" branch, let's merge it into "master". This will include our commits from "main-pages" into the "master" branch. To do so type `git merge main-pages` and press return.
 
-`git push origin master`
+Now, to back up our master branch let's push it up to our personal Guthub remote by typing `git push origin master` and press return.
+
+### Running Local Tests
+
+To run local tests from Terminal type `learn` on Mac or on PC (Windows) type `learn-test`.
 
 ## Resources
 

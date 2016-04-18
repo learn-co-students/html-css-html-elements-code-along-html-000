@@ -512,7 +512,7 @@ Then to run local tests from Terminal type `learn` on Mac or on PC (Windows) typ
 
 ### Backing Up Your Changes
 
-In Terminal, type `git status` and press return to list any changes that have occured on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git checkout -m "ad main pages, text content, image, and links"` and press return. 
+In Terminal, type `git status` and press return to list any changes that have occured on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git checkout -m "add main pages, text content, image, and links"` and press return. 
 
 To backup our branch on the remote server we can push it up by typing `git push -u origin main-pages` and press return. This will push up this recent commit to your personal Github repository.
 

@@ -504,6 +504,12 @@ Then save the file select all the text again and copy it to the clipboard, and p
 
 So you see the HTML validator can be helpful if we have typos in our code and they are tough to see on our own. The validator will scan the code and check for us letting us know of any potential issues.
 
+### Running Local Tests
+
+[Install Firefox Browser](https://www.mozilla.org/en-US/firefox/new/) if you have not already done so.
+
+Then to run local tests from Terminal type `learn` on Mac or on PC (Windows) type `learn-test` and press return.
+
 ### Backing Up Your Changes
 
 In Terminal, type `git status` and press return to list any changes that have occured on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git checkout -m "ad main pages, text content, image, and links"` and press return. 
@@ -515,10 +521,6 @@ Next let's go back to our master branch by typing `git checkout master` and pres
 Since we like the work we did on our "main-pages" branch, let's merge it into "master". This will include our commits from "main-pages" into the "master" branch. To do so type `git merge main-pages` and press return.
 
 Now, to back up our master branch let's push it up to our personal Guthub remote by typing `git push origin master` and press return.
-
-### Running Local Tests
-
-To run local tests from Terminal type `learn` on Mac or on PC (Windows) type `learn-test` and press return.
 
 ## Resources
 

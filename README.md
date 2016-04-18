@@ -518,7 +518,7 @@ Now, to back up our master branch let's push it up to our personal Guthub remote
 
 ### Running Local Tests
 
-To run local tests from Terminal type `learn` on Mac or on PC (Windows) type `learn-test`.
+To run local tests from Terminal type `learn` on Mac or on PC (Windows) type `learn-test` and press return.
 
 ## Resources
 

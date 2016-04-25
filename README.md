@@ -1,4 +1,4 @@
-# HTML Fundamentals Code Along Exercise 1
+# HTML Fundamentals Code Along
 
 ## Objectives
 

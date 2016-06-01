@@ -72,7 +72,7 @@ Let's write a comment in the code that we can read and leave notes about the con
 </html>
 ```
 
-Let's place some other elements in the head section, such as a meta element. Type `<meta charset="UTF-8">`. This tells the browser that the characters in the document should be interpreted as UTF-8 characters. to learn more about charsets you can refer to the link in the resources at the bottom of this lesson. 
+Let's place some other elements in the head section, such as a meta element. Type `<meta charset="UTF-8">`. This tells the browser that the characters in the document should be interpreted as UTF-8 characters. to learn more about charsets you can refer to the link in the resources at the bottom of this lesson.
 
 Also type a `<title></title>` element into the `<head>` section. Here we can give our document a title. This will appear on the browser tab at the top of your browser window.
 
@@ -96,7 +96,7 @@ The page is currently blank because we haven't yet inserted any content into the
 
 ### Text Formatting
 
-Next let's type `Hello World` into the body section. 
+Next let's type `Hello World` into the body section.
 
 ```html
 <!DOCTYPE html>
@@ -128,7 +128,7 @@ Next, let's look at the way white space is interpreted by the browser. Head back
   <body>
     <!-- The body is the entire viewable area of the web page. For example we can see text, links, images, and media. -->
     Hello World.
-    
+
     Hello Moon.
   </body>
 </html>
@@ -258,7 +258,7 @@ Let's create an unorded list with dates for our property archive. Start with a `
     <h4>2014</h4>
     <!-- unordered list -->
     <ul>
-      
+
     </ul>
   </body>
 </html>
@@ -322,7 +322,7 @@ Next, let's open up the market-report.html page in your code editor. Fill in the
     <h1>Exceptional</h1>
     <h2>Realty Group</h2>
     <h3>Market Report</h3>
-    
+
   </body>
 </html>
 ```
@@ -401,7 +401,7 @@ Next let's jump back over to the index.html page in your code editor.
 
 ### Images
 
-To display images in HTML pages we use the `<img>` element. Let's insert one inside our index.html page just below our "h2". Then we will give it the two required attributes `src` and `alt`. 
+To display images in HTML pages we use the `<img>` element. Let's insert one inside our index.html page just below our "h2". Then we will give it the two required attributes `src` and `alt`.
 
 ```html
 <h2>Realty Group</h2>
@@ -488,13 +488,13 @@ Next, open your browser and head to: `https://validator.w3.org/`. Then click the
 
 Click into the textarea feild labeled "Enter the Markup to validate:" and paste your code by pressing Command + v on Mac or Ctrl + v on PC (Windows). Then click the big "Check" button.
 
-A red bar should appear at the top of the page saying "Errors found while checking this document...". Scroll down the page where it says "Validation Output Errors". If all the rest of your code was correct except for the error message we just intentionally inserted, then the first error message will read something like: 
+A red bar should appear at the top of the page saying "Errors found while checking this document...". Scroll down the page where it says "Validation Output Errors". If all the rest of your code was correct except for the error message we just intentionally inserted, then the first error message will read something like:
 
 > Line 30, Column 35: < in the attribute name. Probable cause: > missing immediately before.
 
 The first part of the error "Line 30" identifies the line number of the issue. The second piece "Column 35" means 35 characters including spaces from the beginning of the line is where it sees the issue. The third piece "< in the attribute name." states that at that location it sees a `<` less than symbol that is being read as part of an attribute name on the `p` element. Then the fourth part "Probable cause: > missing immediately before" gives us a hint as to why this is broken. THe reason is we have a missing `>` as it suggests.
 
-Let's go back and fix our code adding the `>` symbol back in. 
+Let's go back and fix our code adding the `>` symbol back in.
 
 ```html
 <p>lorem ipsum dolor sit amet, ... </p>
@@ -504,15 +504,9 @@ Then save the file select all the text again and copy it to the clipboard, and p
 
 So you see the HTML validator can be helpful if we have typos in our code and they are tough to see on our own. The validator will scan the code and check for us letting us know of any potential issues.
 
-### Running Local Tests
-
-[Install Firefox Browser](https://www.mozilla.org/en-US/firefox/new/) if you have not already done so.
-
-Then to run local tests from Terminal type `learn` on Mac or on PC (Windows) type `learn-test` and press return.
-
 ### Backing Up Your Changes
 
-In Terminal, type `git status` and press return to list any changes that have occured on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git checkout -m "add main pages, text content, image, and links"` and press return. 
+In Terminal, type `git status` and press return to list any changes that have occured on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git checkout -m "add main pages, text content, image, and links"` and press return.
 
 To backup our branch on the remote server we can push it up by typing `git push -u origin main-pages` and press return. This will push up this recent commit to your personal Github repository.
 

@@ -19,8 +19,7 @@ In this exercise you will code along with the video to review the HTML fundament
 ## Instructions
 
 - On this lesson's page on Learn.co, click the "Open" button — this will fork and clone the repository and open it in the IDE.
-- Then change directory into the repository folder.
-- create a new branch called "main-pages" using the command `git checkout -b main-pages`
+- Create a new branch called "main-pages" using the command `git checkout -b main-pages`.
 - Open the files in your code editor (in the video I use Sublime Text).
 - At this point in Terminal you would create any sub folders and files using the `mkdir` command and `touch` commands. We have already done this for you so you can get coding right away. In the code editor you will see we have already created the following files and folders.
 

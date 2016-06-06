@@ -18,8 +18,7 @@ In this exercise you will code along with the video to review the HTML fundament
 
 ## Instructions
 
-- Fork this repository on Github.
-- Use Terminal to clone your forked copy.
+- On this lesson's page on Learn.co, click the "Open" button — this will fork and clone the repository and open it in the IDE.
 - Then change directory into the repository folder.
 - create a new branch called "main-pages" using the command `git checkout -b main-pages`
 - Open the files in your code editor (in the video I use Sublime Text).

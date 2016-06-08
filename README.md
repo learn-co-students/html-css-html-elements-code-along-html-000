@@ -514,7 +514,11 @@ Since we like the work we did on our "main-pages" branch, let's merge it into "m
 
 Now, to back up our master branch let's push it up to our personal Guthub remote by typing `git push origin master` and press return.
 
+Now type `learn submit` to submit your pull request.
+
 ## Resources
 
 - [HTML - Lang Codes](http://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/)
 - [HTML Encoding (Character Sets)](http://www.w3schools.com/html/html_charset.asp)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/html-css-html-elements-code-along'>HTML Elements Code-Along</a> on Learn.co and start learning to code for free.</p>

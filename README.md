@@ -516,8 +516,6 @@ Normally, to back up our `master` branch we'd push it up to our personal GitHub 
 
 Congrats!
 
-Now type `learn submit` to submit your pull request.
-
 ## Resources
 
 - [HTML - Lang Codes](http://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/)

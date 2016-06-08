@@ -504,7 +504,7 @@ So you see the HTML validator can be helpful if we have typos in our code and th
 
 ### Backing Up Your Changes
 
-In Terminal, type `git status` and press return to list any changes that have occured on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git checkout -m "add main pages, text content, image, and links"` and press return.
+In Terminal, type `git status` and press return to list any changes that have occured on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git commit -m "add main pages, text content, image, and links"` and press return.
 
 To backup our branch on the remote server we can push it up by typing `git push -u origin main-pages` and press return. This will push up this recent commit to your personal Github repository.
 
@@ -518,3 +518,5 @@ Now, to back up our master branch let's push it up to our personal Guthub remote
 
 - [HTML - Lang Codes](http://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/)
 - [HTML Encoding (Character Sets)](http://www.w3schools.com/html/html_charset.asp)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/html-css-html-elements-code-along'>HTML Elements Code-Along</a> on Learn.co and start learning to code for free.</p>

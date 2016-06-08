@@ -490,7 +490,7 @@ A red bar should appear at the top of the page saying "Errors found while checki
 
 > Line 30, Column 35: < in the attribute name. Probable cause: > missing immediately before.
 
-The first part of the error "Line 30" identifies the line number of the issue. The second piece "Column 35" means 35 characters including spaces from the beginning of the line is where it sees the issue. The third piece "< in the attribute name." states that at that location it sees a `<` less than symbol that is being read as part of an attribute name on the `p` element. Then the fourth part "Probable cause: > missing immediately before" gives us a hint as to why this is broken. THe reason is we have a missing `>` as it suggests.
+The first part of the error "Line 30" identifies the line number of the issue. The second piece "Column 35" means 35 characters including spaces from the beginning of the line is where it sees the issue. The third piece "< in the attribute name." states that at that location it sees a `<` less than symbol that is being read as part of an attribute name on the `p` element. Then the fourth part "Probable cause: > missing immediately before" gives us a hint as to why this is broken. The reason is we have a missing `>` as it suggests.
 
 Let's go back and fix our code adding the `>` symbol back in.
 
@@ -504,7 +504,7 @@ So you see the HTML validator can be helpful if we have typos in our code and th
 
 ### Backing Up Your Changes
 
-In Terminal, type `git status` and press return to list any changes that have occured on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git checkout -m "add main pages, text content, image, and links"` and press return.
+In Terminal, type `git status` and press return to list any changes that have occurred on your files. Looks like there were quite a few modified files. To stage the files type `git add .` and press return. Then commit the changes by typing `git commit -am "add main pages, text content, image, and links"` and press return.
 
 To backup our branch on the remote server we can push it up by typing `git push -u origin main-pages` and press return. This will push up this recent commit to your personal Github repository.
 
@@ -512,7 +512,9 @@ Next let's go back to our master branch by typing `git checkout master` and pres
 
 Since we like the work we did on our "main-pages" branch, let's merge it into "master". This will include our commits from "main-pages" into the "master" branch. To do so type `git merge main-pages` and press return.
 
-Now, to back up our master branch let's push it up to our personal Guthub remote by typing `git push origin master` and press return.
+Normally, to back up our `master` branch we'd push it up to our personal GitHub remote by typing `git push origin master` and pressing return. _However_, in order to submit this lesson, you'll need to type `learn submit`.
+
+Congrats!
 
 ## Resources
 

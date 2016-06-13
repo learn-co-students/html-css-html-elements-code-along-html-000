@@ -20,7 +20,7 @@ In this exercise you will code along with the video to review the HTML fundament
 
 - On this lesson's page on Learn.co, click the "Open" button — this will fork and clone the repository and open it in the IDE.
 - Create a new branch called "main-pages" using the command `git checkout -b main-pages`.
-- Open the files in your code editor (in the video I use Sublime Text).
+- Open the files in your code editor 
 - At this point in Terminal you would create any sub folders and files using the `mkdir` command and `touch` commands. We have already done this for you so you can get coding right away. In the code editor you will see we have already created the following files and folders.
 
 ```shell
@@ -38,11 +38,15 @@ In this exercise you will code along with the video to review the HTML fundament
 
 - Code along with the provided video below and/or its supplementary reading located below the video. Code everything you see there. Feel free to stop, pause, rewind or fast forward through the content to keep pace.
 
+**Note** that the video uses your computer's terminal, but in this course, you'll be using the Learn IDE and all Git commands will work the same way on it as it does on your terminal.
+
+However, the video will ask you to open files using with instructions that are specific to Sublime. Since that is not the text editor used in the IDE, please use the IDE specific commands that we've already covered.
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLj148bJp5wiyXRRpL8rM-cLETaClgdBK2" frameborder="0" allowfullscreen></iframe>
 
 ### Document Structure
 
-Open up the index.html page in your text editor. In Sublime you do this by double clicking. At the top of the document add the `<!DOCTYPE html>` element. This tells the browser that following HTML page is version 5 (HTML5). Many elements have both a starting and ending tag, but the "DOCTYPE" element only has a starting tag.
+Once you have the repository in your IDE, open up the index.html page in the text editor are. At the top of the document add the `<!DOCTYPE html>` element. This tells the browser that following HTML page is version 5 (HTML5). Many elements have both a starting and ending tag, but the "DOCTYPE" element only has a starting tag.
 
 Next write the `<html></html>` element. This tells the browser that all code within these tags is HTML code. Inside the opening (starting) tag `<html>` let's add the attribute "lang" to specify a language. `<html lang="en">`. This tells the browser and search engines that the content is in English. To se a full list of lang codes you can explore [HTML - Lang Codes](http://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/).
 
@@ -88,7 +92,7 @@ Also type a `<title></title>` element into the `<head>` section. Here we can giv
 </html>
 ```
 
-Save your page, Command + s on Mac or Ctrl + s on windows. Then open the HTML page in your browser. From Terminal you can type `open index.html`.
+Save your page in the IDE. Then open the HTML page in your browser via the IDE. 
 
 The page is currently blank because we haven't yet inserted any content into the body yet, but we can see our title at the top of the browser tab.
 
@@ -512,7 +516,7 @@ Next let's go back to our master branch by typing `git checkout master` and pres
 
 Since we like the work we did on our "main-pages" branch, let's merge it into "master". This will include our commits from "main-pages" into the "master" branch. To do so type `git merge main-pages` and press return.
 
-Normally, to back up our `master` branch we'd push it up to our personal GitHub remote by typing `git push origin master` and pressing return. _However_, in order to submit this lesson, you'll need to type `learn submit`.
+Normally, to back up our `master` branch we'd push it up to our personal GitHub remote by typing `git push origin master` and pressing return. However in order to submit this lesson, you'll need to type `learn submit`.
 
 Congrats!
 

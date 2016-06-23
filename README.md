@@ -200,7 +200,7 @@ Next lets put in some place filler text to replace our previous paragraphs. In y
 </html>
 ```
 
-Save the page, then head back to the browser and refresh the page. Now we can see our place filler paragraph using auto completion. We'll elarn more of these time saving tricks later on.
+Save the page, then head back to the browser and refresh the page. Now we can see our place filler paragraph using auto completion. We'll learn more of these time saving tricks later on.
 
 Next let's create a line-break in our paragraph by inserting the `<br>` element to force a new line like so:
 
@@ -353,7 +353,7 @@ Inside the `<table>` we create rows by inserting the `<tr></tr>` table row eleme
 </table>
 ```
 
-To create columns we can futher divide up the rows by inserting either `<th>` table header cell or `<td>` regular table cell. The table headers are meant to label the tops of columns and the normal table cells are for separating data for each column. In the first row lets add table header cells for "Address", "City", "State", "Sales Price".
+To create columns we can further divide up the rows by inserting either `<th>` table header cell or `<td>` regular table cell. The table headers are meant to label the tops of columns and the normal table cells are for separating data for each column. In the first row lets add table header cells for "Address", "City", "State", "Sales Price".
 
 ```html
 <table>
@@ -366,7 +366,7 @@ To create columns we can futher divide up the rows by inserting either `<th>` ta
 </table>
 ```
 
-Then we will fill in some data for each real estate property within `<td>` elements for the remaining rows. We'll also format our `<th>` and `<td>` vertically so its easier to read in the code, although it will not effect the way it displays in the browser.
+Then we will fill in some data for each real estate property within `<td>` elements for the remaining rows. We'll also format our `<th>` and `<td>` vertically so it's easier to read the code, although this will not effect the way it displays in the browser.
 
 ```html
 <table>
@@ -397,7 +397,7 @@ Then we will fill in some data for each real estate property within `<td>` eleme
 </table>
 ```
 
-Go ahead and save this page and refresh in the browser and you will see our table appears. The "th" cells have bold text that is centered above each column and the regular cells are normal text weight and left aligned. If you highlight the content of the table you will see the grid that the table is creating to allign our content into rows and columns. Later on in a future lesson we will explore styling the table to adjust its visual appearance.
+Go ahead and save this page and refresh in the browser and you will see our table appears. The "th" cells have bold text that is centered above each column and the regular cells are normal text weight and left aligned. If you highlight the content of the table you will see the grid that the table is creating to align our content into rows and columns. Later on in a future lesson we will explore styling the table to adjust its visual appearance.
 
 Next let's jump back over to the index.html page in your code editor.
 
@@ -416,23 +416,23 @@ The src (source) attribute points the browser to the location of our image file.
 <img src="images/intro-pic.jpg" alt="">
 ```
 
-Next let's specify the alt attribute.  the alt attribute stands fro alternative text. It provides a text description for the visiually impaired. In this case if a blind person was visiting this page a screen reader would read to them out loud the content of the page and when it got to our image it would read the alt text. This alt text is also useful for search engines.
+Next let's specify the alt attribute. The alt attribute stands for alternative text. It provides a text description for the visually impaired. In this case if a blind person was visiting this page a screen reader would read to them out loud the content of the page and when it got to our image it would read the alt text. This alt text is also useful for search engines.
 
 ```html
 <img src="images/intro-pic.jpg" alt="A beautiful living room.">
 ```
 
-We can also optionally add a title attribute that will display a text caption if the user mouses over the image and leaves the mouse there for a perios of time.
+We can also optionally add a title attribute that will display a text caption if the user mouses over the image and leaves the mouse there for a period of time.
 
 ```html
 <img src="images/intro-pic.jpg" alt="A beautiful living room." title="Welcome to Exceptional Realty Group">
 ```
 
-Let's save our file, and return to the browser and refresh the page you image should appear. When we mouse over the image and leave the mouse there for a seond or two the title text "Welcome to Exceptional Realty Group" will appear. Notice that the alt text is hidden however.
+Let's save our file, and return to the browser and refresh the page you image should appear. When we mouse over the image and leave the mouse there for a second or two the title text "Welcome to Exceptional Realty Group" will appear. Notice that the alt text is hidden however.
 
 ### Links
 
-Next, back in our code editor on the index.html page let's add some links to link allof the pages to each other. Above our image let's create some site navigation made up of `<a></a>` anchor link elements.
+Next, back in our code editor on the index.html page let's add some links to link all of the pages to each other. Above our image let's create some site navigation made up of `<a></a>` anchor link elements.
 
 ```
 <!-- links -->
@@ -450,10 +450,10 @@ Note that on the last link instead of specifiying a relative file path as we did
 
 ```html
 <!-- links -->
-<a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
+<a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings.html">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
 ```
 
-Let's copy and paste our link code and include it in the same place (just below the "h2" on all our other pages). For the contact page since its empty you can fill it in with the following code:
+Let's copy and paste our link code and include it in the same place (just below the "h2" on all our other pages). Since the contact page is empty, fill it in with the following code:
 
 ```html
 <!DOCTYPE html>
@@ -466,7 +466,7 @@ Let's copy and paste our link code and include it in the same place (just below 
     <h1>Exceptional</h1>
     <h2>Realty Group</h2>
     <!-- links -->
-    <a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
+    <a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings.html">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
     <h3>Contact</h3>
   </body>
 </html>
@@ -488,7 +488,7 @@ Now select all of your code by pressing Command + a on Mac or Ctrl + a on PC (Wi
 
 Next, open your browser and head to: `https://validator.w3.org/`. Then click the tab that says "Validate by Direct Input".
 
-Click into the textarea feild labeled "Enter the Markup to validate:" and paste your code by pressing Command + v on Mac or Ctrl + v on PC (Windows). Then click the big "Check" button.
+Click into the textarea field labeled "Enter the Markup to validate:" and paste your code by pressing Command + v on Mac or Ctrl + v on PC (Windows). Then click the big "Check" button.
 
 A red bar should appear at the top of the page saying "Errors found while checking this document...". Scroll down the page where it says "Validation Output Errors". If all the rest of your code was correct except for the error message we just intentionally inserted, then the first error message will read something like:
 

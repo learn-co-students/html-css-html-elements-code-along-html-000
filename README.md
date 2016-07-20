@@ -20,7 +20,7 @@ In this exercise you will code along with the video to review the HTML fundament
 
 - On this lesson's page on Learn.co, click the "Open" button — this will fork and clone the repository and open it in the IDE.
 - Create a new branch called "main-pages" using the command `git checkout -b main-pages`.
-- Open the files in your code editor 
+- Open the files in your code editor
 - At this point in Terminal you would create any sub folders and files using the `mkdir` command and `touch` commands. We have already done this for you so you can get coding right away. In the code editor you will see we have already created the following files and folders.
 
 ```shell
@@ -92,7 +92,7 @@ Also type a `<title></title>` element into the `<head>` section. Here we can giv
 </html>
 ```
 
-Save your page in the IDE. Then open the HTML page in your browser via the IDE. 
+Save your page in the IDE. Then open the HTML page in your browser via the IDE.
 
 The page is currently blank because we haven't yet inserted any content into the body yet, but we can see our title at the top of the browser tab.
 
@@ -180,7 +180,7 @@ Next let's create some headings. Type an `<h1></h1>` and `<h2></h2>` above our p
 
 Save the page, then head back to the browser and refresh the page. Now we can see our headings. the "h1" is the largest and most important for search engines, and the h2 is slightly smaller and carries slightly less importance for search terms.
 
-Next lets put in some place filler text to replace our previous paragraphs. In your code editor you may have shortcut commands installed. for example in Sublime Text we can type the letter `p` and the hit tab and it will autocomplete for us the `<p></p>` element and to fill it with placefiller text we can type `lorem` and hit the tab key which will produce the following:
+Next lets putt in some place filler text to replace our previous paragraphs. In your code editor you may have shortcut commands installed. for example in Sublime Text we can type the letter `p` and the hit tab and it will autocomplete for us the `<p></p>` element and to fill it with placefiller text we can type `lorem` and hit the tab key which will produce the following:
 
 ```html
 <!DOCTYPE html>

@@ -20,7 +20,7 @@ In this exercise you will code along with the video to review the HTML fundament
 
 - On this lesson's page on Learn.co, click the "Open" button — this will fork and clone the repository and open it in the IDE.
 - Create a new branch called "main-pages" using the command `git checkout -b main-pages`.
-- Open the files in your code editor 
+- Open the files in your code editor
 - At this point in Terminal you would create any sub folders and files using the `mkdir` command and `touch` commands. We have already done this for you so you can get coding right away. In the code editor you will see we have already created the following files and folders.
 
 ```shell
@@ -92,7 +92,7 @@ Also type a `<title></title>` element into the `<head>` section. Here we can giv
 </html>
 ```
 
-Save your page in the IDE. Then open the HTML page in your browser via the IDE. 
+Save your page in the IDE. Then open the HTML page in your browser via the IDE.
 
 The page is currently blank because we haven't yet inserted any content into the body yet, but we can see our title at the top of the browser tab.
 
@@ -488,7 +488,7 @@ Now select all of your code by pressing Command + a on Mac or Ctrl + a on PC (Wi
 
 Next, open your browser and head to: `https://validator.w3.org/`. Then click the tab that says "Validate by Direct Input".
 
-Click into the textarea field labeled "Enter the Markup to validate:" and paste your code by pressing Command + v on Mac or Ctrl + v on PC (Windows). Then click the big "Check" button.
+Click into the text area field labeled "Enter the Markup to validate:" and paste your code by pressing Command + v on Mac or Ctrl + v on PC (Windows). Then click the big "Check" button.
 
 A red bar should appear at the top of the page saying "Errors found while checking this document...". Scroll down the page where it says "Validation Output Errors". If all the rest of your code was correct except for the error message we just intentionally inserted, then the first error message will read something like:
 
